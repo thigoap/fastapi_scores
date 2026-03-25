@@ -1,0 +1,34 @@
+{% extends "Base.html" %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+<div class='flex flex-col w-full justify-center items-center'>
+  <img class='w-64 md:w-96 pt-16 md:pt-8' src='../static/assets/CoPalpites-logo.png' alt='CoPalpites Logo'>
+  <p class='pt-12 pb-4 text-center'>
+    Dê os seus palpites nos resultados dos jogos da Copa de 2026!<br>
+    Compare o seu desempenho no ranking global ou nos grupos com seus amigos.
+  </p>
+
+  <div class='flex w-64 md:w-64 justify-evenly pb-12'>
+    <div class='w-24 flex flex-col items-center p-2 border border-gray-400 rounded-sm bg-white'>
+      <p>Já somos</p>
+      <p class='font-bold text-2xl'>{{ counts[0] }}</p>
+      <p>palpiteiros</p>
+    </div>
+    <div class='w-24 flex flex-col items-center p-2 border border-gray-400 rounded-sm bg-white'>
+      <p>E fizemos</p>
+      <p class='font-bold text-2xl'>{{ counts[1] }}</p>
+      <p>palpites!</p>
+    </div>
+  </div>
+
+  <a href='/login'>  
+    <div class='flex border border-blue-400 rounded-xl px-2 py-1 bg-white'>
+      <img class='w-8' src='../static/assets/google-logo.png' alt='Google Icon'>
+      <p class='text-2xl pl-2'>Acesse com o Google</p>
+    </div>
+  </a>
+  
+{% endblock %}
+

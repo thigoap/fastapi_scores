@@ -1,0 +1,5 @@
+/* Run 'npm run dev' inside tailwindcss folder to create the css output */
+
+@import "tailwindcss";
+
+@source "../templates";

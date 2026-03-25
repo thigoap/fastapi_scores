@@ -1,0 +1,42 @@
+
+{% extends 'Base.html' %}
+
+{% block title %}Regras{% endblock %}
+
+
+{% block content %}
+
+{% include 'components/Nav.html' %}
+
+<div class="flex-1 flex flex-col items-center md:px-4">
+  <p class='text-2xl md:pb-8 pb-4'>Regras - como funciona</p>
+  
+  <div class='items-start'>
+    <p>Sobre os palpites:</p>
+    <ul class='list-disc list-inside'>
+      <li>Acesse <b>Palpites</b> para fazer os seus palpites nos próximos jogos.</li>
+      <li>É possível fazer palpites até o horário de início dos jogos.</li>
+      <li>É possível mudar seus palpites a qualquer momento, respeitanto o limite de horário acima.</li>
+      <li>Os seus palpites serão válidos para o ranking global e para os seus grupos, caso você faça parte de algum.</li>
+    </ul>
+    <br>
+    <p>Sobre a pontuação:</p>
+    <p>Os pontos serão distribuidos conforme abaixo:</p> 
+    <ul class='list-disc list-inside'>       
+      <li>9 - Acertar o resultado exato</li>
+      <li>7 - Acertar o vencedor e o número de gols de um dos times</li>
+      <li>5 - Acertar empate, mas errar o número de gols</li>
+      <li>3 - Acertar o vencedor, mas errar o número de gols dos dois times</li>
+    </ul>
+    <br>
+    <p>Sobre os rankings e grupos:</p> 
+    <ul class='list-disc list-inside'>       
+      <li>Você pode criar até 1 grupo e convidar seus amigos para participar do seu bolão.</li>
+      <li>O seu grupo pode ter até 10 participantes.</li>
+      <li>Você pode participar de até 3 grupos diferentes.</li>
+    </ul>
+  </div>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,1026 @@
+{% extends 'Base.html' %}
+
+{% block title %}Jogos{% endblock %}
+
+
+{% block content %}
+
+{% include 'components/Nav.html' %}
+
+<div class="flex-1 flex flex-col items-center">
+	<p class='text-2xl md:pb-8 pb-4'>Agenda de jogos</p>
+
+	<!-- Amistosos -->
+	<div class="flex-1 flex flex-col items-center">
+		<p class='py-2 underline text-lg'>Amistoso 25-03-2026</p>
+		<p class='text-xs text-gray-400'>17:00</p>
+		<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+			<div class='flex items-center justify-end'>
+				<div class='pr-2'>Brasil</div>
+				<img class='w-8' src='../static/assets/flags/BRA.png' />
+			</div>
+			<p class='justify-self-center self-center text-lg'> x </p>
+			<div class='flex items-center justify-start'>
+				<img class='w-8' src='../static/assets/flags/FRA.png' />
+				<div class='pl-2'>França</div>
+			</div>
+		</div>
+		<p class='py-2 underline text-lg'>Amistoso 31-03-2026</p>
+		<p class='text-xs text-gray-400'>21:00</p>
+		<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+			<div class='flex items-center justify-end'>
+				<div class='pr-2'>Brasil</div>
+				<img class='w-8' src='../static/assets/flags/BRA.png' />
+			</div>
+			<p class='justify-self-center self-center text-lg'> x </p>
+			<div class='flex items-center justify-start'>
+				<img class='w-8' src='../static/assets/flags/CRO.png' />
+				<div class='pl-2'>Croácia</div>
+			</div>
+		</div>
+		<p class='py-2 underline text-lg'>Amistoso 31-05-2026</p>
+		<p class='text-xs text-gray-400'>A definir</p>
+		<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+			<div class='flex items-center justify-end'>
+				<div class='pr-2'>Brasil</div>
+				<img class='w-8' src='../static/assets/flags/BRA.png' />
+			</div>
+			<p class='justify-self-center self-center text-lg'> x </p>
+			<div class='flex items-center justify-start'>
+				<img class='w-8' src='../static/assets/flags/PAN.png' />
+				<div class='pl-2'>Panamá</div>
+			</div>
+		</div>
+				<p class='py-2 underline text-lg'>Amistoso 06-06-2026</p>
+		<p class='text-xs text-gray-400'>A definir</p>
+		<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+			<div class='flex items-center justify-end'>
+				<div class='pr-2'>Brasil</div>
+				<img class='w-8' src='../static/assets/flags/BRA.png' />
+			</div>
+			<p class='justify-self-center self-center text-lg'> x </p>
+			<div class='flex items-center justify-start'>
+				<img class='w-8' src='../static/assets/flags/EGY.png' />
+				<div class='pl-2'>Egito</div>
+			</div>
+		</div>
+	</div>
+
+	<br>
+	<!-- 11-06-2026 -->
+	<div class="flex-1 flex flex-col items-center">
+	<p class='py-2 underline text-lg'>11-06-2026</p>
+	<p class='text-xs text-gray-400'>16:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>México</div>
+			<img class='w-8' src='../static/assets/flags/MEX.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/RSA.png' />
+			<div class='pl-2'>África do Sul</div>
+		</div>
+	</div>
+	<p class='text-xs text-gray-400'>23:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>República da Coreia</div>
+			<img class='w-8' src='../static/assets/flags/KOR.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/KOR.png' />
+			<div class='pl-2'>TBD</div>
+		</div>
+	</div>
+	</div>
+
+	<!-- 12-06-2026 -->
+	<div class="flex-1 flex flex-col items-center">
+	<p class='py-2 underline text-lg'>12-06-2026</p>
+	<p class='text-xs text-gray-400'>16:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>Canadá</div>
+			<img class='w-8' src='../static/assets/flags/CAN.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/CAN.png' />
+			<div class='pl-2'>TBD</div>
+		</div>
+	</div>
+	<p class='text-xs text-gray-400'>22:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>Estados Unidos</div>
+			<img class='w-8' src='../static/assets/flags/USA.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/PAR.png' />
+			<div class='pl-2'>Paraguai</div>
+		</div>
+	</div>
+	</div>
+
+	<!-- 13-06-2026 -->
+	<div class="flex-1 flex flex-col items-center">
+	<p class='py-2 underline text-lg'>13-06-2026</p>
+	<p class='text-xs text-gray-400'>16:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>Catar</div>
+			<img class='w-8' src='../static/assets/flags/QAT.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/SWI.png' />
+			<div class='pl-2'>Suíça</div>
+		</div>
+	</div>
+	<p class='text-xs text-gray-400'>19:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>Brasil</div>
+			<img class='w-8' src='../static/assets/flags/BRA.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/MAR.png' />
+			<div class='pl-2'>Marrocos</div>
+		</div>
+	</div>
+	<p class='text-xs text-gray-400'>22:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>Haiti</div>
+			<img class='w-8' src='../static/assets/flags/HAI.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/SCO.png' />
+			<div class='pl-2'>Escócia</div>
+		</div>
+	</div>
+	<p class='text-xs text-gray-400'>01:00* - 14-06</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>Austrália</div>
+			<img class='w-8' src='../static/assets/flags/AUS.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/AUS.png' />
+			<div class='pl-2'>TBD</div>
+		</div>
+	</div>
+	</div>
+
+	<!-- 14-06-2026 -->
+	<div class="flex-1 flex flex-col items-center">
+	<p class='py-2 underline text-lg'>14-06-2026</p>
+	<p class='text-xs text-gray-400'>14:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>Alemanha</div>
+			<img class='w-8' src='../static/assets/flags/GER.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/CUW.png' />
+			<div class='pl-2'>Curaçau</div>
+		</div>
+	</div>
+	<p class='text-xs text-gray-400'>17:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>Holanda</div>
+			<img class='w-8' src='../static/assets/flags/NED.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/JAP.png' />
+			<div class='pl-2'>Japão</div>
+		</div>
+	</div>
+	<p class='text-xs text-gray-400'>20:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>Costa do Marfim</div>
+			<img class='w-8' src='../static/assets/flags/CIV.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/ECU.png' />
+			<div class='pl-2'>Equador</div>
+		</div>
+	</div>
+	<p class='text-xs text-gray-400'>23:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>TBD</div>
+			<img class='w-8' src='../static/assets/flags/TUN.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/TUN.png' />
+			<div class='pl-2'>Tunísia</div>
+		</div>
+	</div>
+	</div>
+
+	<!-- 15-06-2026 -->
+	<div class="flex-1 flex flex-col items-center">
+	<p class='py-2 underline text-lg'>15-06-2026</p>
+	<p class='text-xs text-gray-400'>13:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>Espanha</div>
+			<img class='w-8' src='../static/assets/flags/SPA.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/CPV.png' />
+			<div class='pl-2'>Cabo Verde</div>
+		</div>
+	</div>
+	<p class='text-xs text-gray-400'>16:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>Bélgica</div>
+			<img class='w-8' src='../static/assets/flags/BEL.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/EGY.png' />
+			<div class='pl-2'>Egito</div>
+		</div>
+	</div>
+	<p class='text-xs text-gray-400'>19:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>Arábia Saudita</div>
+			<img class='w-8' src='../static/assets/flags/KSA.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/URU.png' />
+			<div class='pl-2'>Uruguai</div>
+		</div>
+	</div>
+	<p class='text-xs text-gray-400'>22:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>RI do Irã</div>
+			<img class='w-8' src='../static/assets/flags/IRN.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/NZL.png' />
+			<div class='pl-2'>Nova Zelândia</div>
+		</div>
+	</div>
+	</div>
+
+	<!-- 16-06-2026 -->
+	<div class="flex-1 flex flex-col items-center">
+	<p class='py-2 underline text-lg'>16-06-2026</p>
+	<p class='text-xs text-gray-400'>16:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>França</div>
+			<img class='w-8' src='../static/assets/flags/FRA.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/SEN.png' />
+			<div class='pl-2'>Senegal</div>
+		</div>
+	</div>
+	<p class='text-xs text-gray-400'>19:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>TBD</div>
+			<img class='w-8' src='../static/assets/flags/NOR.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/NOR.png' />
+			<div class='pl-2'>Noruega</div>
+		</div>
+	</div>
+	<p class='text-xs text-gray-400'>22:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>Argentina</div>
+			<img class='w-8' src='../static/assets/flags/ARG.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/ALG.png' />
+			<div class='pl-2'>Argélia</div>
+		</div>
+	</div>
+	<p class='text-xs text-gray-400'>01:00* - 17-06</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>Áustria</div>
+			<img class='w-8' src='../static/assets/flags/AUT.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/JOR.png' />
+			<div class='pl-2'>Jordânia</div>
+		</div>
+	</div>
+	</div>
+
+	<!-- 17-06-2026 -->
+	<div class="flex-1 flex flex-col items-center">
+	<p class='py-2 underline text-lg'>17-06-2026</p>
+	<p class='text-xs text-gray-400'>14:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>Portugal</div>
+			<img class='w-8' src='../static/assets/flags/POR.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/POR.png' />
+			<div class='pl-2'>TBD</div>
+		</div>
+	</div>
+	<p class='text-xs text-gray-400'>17:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>Inglaterra</div>
+			<img class='w-8' src='../static/assets/flags/ENG.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/CRO.png' />
+			<div class='pl-2'>Croácia</div>
+		</div>
+	</div>
+	<p class='text-xs text-gray-400'>20:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>Gana</div>
+			<img class='w-8' src='../static/assets/flags/GHA.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/PAN.png' />
+			<div class='pl-2'>Panamá</div>
+		</div>
+	</div>
+	<p class='text-xs text-gray-400'>23:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>Uzbequistão</div>
+			<img class='w-8' src='../static/assets/flags/UZB.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/COL.png' />
+			<div class='pl-2'>Colômbia</div>
+		</div>
+	</div>
+	</div>
+	
+	<!-- 18-06-2026 -->
+	<div class="flex-1 flex flex-col items-center">
+	<p class='py-2 underline text-lg'>18-06-2026</p>
+	<p class='text-xs text-gray-400'>13:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>TBD</div>
+			<img class='w-8' src='../static/assets/flags/RSA.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/RSA.png' />
+			<div class='pl-2'>África do Sul</div>
+		</div>
+	</div>
+	<p class='text-xs text-gray-400'>16:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>Suíça</div>
+			<img class='w-8' src='../static/assets/flags/SWI.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/SWI.png' />
+			<div class='pl-2'>TBD</div>
+		</div>
+	</div>
+	<p class='text-xs text-gray-400'>19:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>Canadá</div>
+			<img class='w-8' src='../static/assets/flags/CAN.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/QAT.png' />
+			<div class='pl-2'>Catar</div>
+		</div>
+	</div>
+	<p class='text-xs text-gray-400'>22:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>México</div>
+			<img class='w-8' src='../static/assets/flags/MEX.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/KOR.png' />
+			<div class='pl-2'>República da Coreia</div>
+		</div>
+	</div>
+	</div>
+
+	<!-- 19-06-2026 -->
+	<div class="flex-1 flex flex-col items-center">
+	<p class='py-2 underline text-lg'>19-06-2026</p>
+	<p class='text-xs text-gray-400'>16:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>Estados Unidos</div>
+			<img class='w-8' src='../static/assets/flags/USA.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/AUS.png' />
+			<div class='pl-2'>Austrália</div>
+		</div>
+	</div>
+	<p class='text-xs text-gray-400'>19:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>Escócia</div>
+			<img class='w-8' src='../static/assets/flags/SCO.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/MAR.png' />
+			<div class='pl-2'>Marrocos</div>
+		</div>
+	</div>
+	<p class='text-xs text-gray-400'>22:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>Brasil</div>
+			<img class='w-8' src='../static/assets/flags/BRA.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/HAI.png' />
+			<div class='pl-2'>Haiti</div>
+		</div>
+	</div>
+	<p class='text-xs text-gray-400'>01:00* - 20-06</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>TBD</div>
+			<img class='w-8' src='../static/assets/flags/PAR.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/PAR.png' />
+			<div class='pl-2'>Paraguai</div>
+		</div>
+	</div>
+	</div>
+
+	<!-- 20-06-2026 -->
+	<div class="flex-1 flex flex-col items-center">
+	<p class='py-2 underline text-lg'>20-06-2026</p>
+	<p class='text-xs text-gray-400'>14:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>Holanda</div>
+			<img class='w-8' src='../static/assets/flags/NED.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/NED.png' />
+			<div class='pl-2'>TBD</div>
+		</div>
+	</div>
+	<p class='text-xs text-gray-400'>17:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>Alemanha</div>
+			<img class='w-8' src='../static/assets/flags/GER.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/CIV.png' />
+			<div class='pl-2'>Costa do Marfim</div>
+		</div>
+	</div>
+	<p class='text-xs text-gray-400'>21:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>Equador</div>
+			<img class='w-8' src='../static/assets/flags/ECU.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/CUW.png' />
+			<div class='pl-2'>Curaçau</div>
+		</div>
+	</div>
+	<p class='text-xs text-gray-400'>01:00* - 21-06</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>Tunísia</div>
+			<img class='w-8' src='../static/assets/flags/TUN.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/JAP.png' />
+			<div class='pl-2'>Japão</div>
+		</div>
+	</div>
+	</div>
+
+	<!-- 21-06-2026 -->
+	<div class="flex-1 flex flex-col items-center">
+	<p class='py-2 underline text-lg'>21-06-2026</p>
+
+	<p class='text-xs text-gray-400'>13:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>Espanha</div>
+			<img class='w-8' src='../static/assets/flags/SPA.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/KSA.png' />
+			<div class='pl-2'>Arábia Saudita</div>
+		</div>
+	</div>
+	<p class='text-xs text-gray-400'>16:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>Bégica</div>
+			<img class='w-8' src='../static/assets/flags/BEL.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/IRN.png' />
+			<div class='pl-2'>RI do Irã</div>
+		</div>
+	</div>
+	<p class='text-xs text-gray-400'>19:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>Uruguai</div>
+			<img class='w-8' src='../static/assets/flags/URU.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/CPV.png' />
+			<div class='pl-2'>Cabo Verde</div>
+		</div>
+	</div>
+	<p class='text-xs text-gray-400'>22:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>Nova Zelândia</div>
+			<img class='w-8' src='../static/assets/flags/NZL.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/EGY.png' />
+			<div class='pl-2'>Egito</div>
+		</div>
+	</div>
+	</div>
+
+	<!-- 22-06-2026 -->
+	<div class="flex-1 flex flex-col items-center">
+	<p class='py-2 underline text-lg'>22-06-2026</p>
+	<p class='text-xs text-gray-400'>14:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>Argentina</div>
+			<img class='w-8' src='../static/assets/flags/ARG.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/AUT.png' />
+			<div class='pl-2'>Áustria</div>
+		</div>
+	</div>
+	<p class='text-xs text-gray-400'>18:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>França</div>
+			<img class='w-8' src='../static/assets/flags/FRA.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/FRA.png' />
+			<div class='pl-2'>TBD</div>
+		</div>
+	</div>
+	<p class='text-xs text-gray-400'>21:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>Noruega</div>
+			<img class='w-8' src='../static/assets/flags/NOR.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/SEN.png' />
+			<div class='pl-2'>Senegal</div>
+		</div>
+	</div>	
+	<p class='text-xs text-gray-400'>00:00* - 23-06</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>Jordânia</div>
+			<img class='w-8' src='../static/assets/flags/JOR.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/ALG.png' />
+			<div class='pl-2'>Argélia</div>
+		</div>
+	</div>
+	</div>
+
+	<!-- 23-06-2026 -->
+	<div class="flex-1 flex flex-col items-center">
+	<p class='py-2 underline text-lg'>23-06-2026</p>
+
+	<p class='text-xs text-gray-400'>14:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>Portugal</div>
+			<img class='w-8' src='../static/assets/flags/POR.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/UZB.png' />
+			<div class='pl-2'>Uzbequistão</div>
+		</div>
+	</div>
+	<p class='text-xs text-gray-400'>17:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>Inglaterra</div>
+			<img class='w-8' src='../static/assets/flags/ENG.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/GHA.png' />
+			<div class='pl-2'>Gana</div>
+		</div>
+	</div>
+	<p class='text-xs text-gray-400'>20:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>Panamá</div>
+			<img class='w-8' src='../static/assets/flags/PAN.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/CRO.png' />
+			<div class='pl-2'>Croácia</div>
+		</div>
+	</div>
+	<p class='text-xs text-gray-400'>23:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>Colômbia</div>
+			<img class='w-8' src='../static/assets/flags/COL.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/COL.png' />
+			<div class='pl-2'>TBD</div>
+		</div>
+	</div>
+	</div>
+
+	<!-- 24-06-2026 -->
+	<div class="flex-1 flex flex-col items-center">
+	<p class='py-2 underline text-lg'>24-06-2026</p>
+	<p class='text-xs text-gray-400'>16:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>Suíça</div>
+			<img class='w-8' src='../static/assets/flags/SWI.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/CAN.png' />
+			<div class='pl-2'>Canadá</div>
+		</div>
+	</div>
+	<p class='text-xs text-gray-400'>16:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>TBD</div>
+			<img class='w-8' src='../static/assets/flags/QAT.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/QAT.png' />
+			<div class='pl-2'>Catar</div>
+		</div>
+	</div>
+	<p class='text-xs text-gray-400'>19:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>Escócia</div>
+			<img class='w-8' src='../static/assets/flags/SCO.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/BRA.png' />
+			<div class='pl-2'>Brasil</div>
+		</div>
+	</div>
+	<p class='text-xs text-gray-400'>19:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>Marrocos</div>
+			<img class='w-8' src='../static/assets/flags/MAR.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/HAI.png' />
+			<div class='pl-2'>Haiti</div>
+		</div>
+	</div>
+	<p class='text-xs text-gray-400'>22:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>TBD</div>
+			<img class='w-8' src='../static/assets/flags/MEX.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/MEX.png' />
+			<div class='pl-2'>México</div>
+		</div>
+	</div>
+	<p class='text-xs text-gray-400'>22:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>África do Sul</div>
+			<img class='w-8' src='../static/assets/flags/KSA.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/KOR.png' />
+			<div class='pl-2'>República da Coreia</div>
+		</div>
+	</div>
+	</div>
+
+	<!-- 25-06-2026 -->
+	<div class="flex-1 flex flex-col items-center">
+	<p class='py-2 underline text-lg'>25-06-2026</p>
+	<p class='text-xs text-gray-400'>17:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>Curaçau</div>
+			<img class='w-8' src='../static/assets/flags/CUW.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/CIV.png' />
+			<div class='pl-2'>Costa do Marfim</div>
+		</div>
+	</div>
+	<p class='text-xs text-gray-400'>17:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>Equador</div>
+			<img class='w-8' src='../static/assets/flags/ECU.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/GER.png' />
+			<div class='pl-2'>Alemanha</div>
+		</div>
+	</div>
+	<p class='text-xs text-gray-400'>20:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>Japão</div>
+			<img class='w-8' src='../static/assets/flags/JAP.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/JAP.png' />
+			<div class='pl-2'>TBD</div>
+		</div>
+	</div>
+	<p class='text-xs text-gray-400'>20:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>Tunísia</div>
+			<img class='w-8' src='../static/assets/flags/TUN.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/NED.png' />
+			<div class='pl-2'>Holanda</div>
+		</div>
+	</div>
+	<p class='text-xs text-gray-400'>23:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>TBD</div>
+			<img class='w-8' src='../static/assets/flags/USA.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/USA.png' />
+			<div class='pl-2'>Estados Unidos</div>
+		</div>
+	</div>
+	<p class='text-xs text-gray-400'>23:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>Paraguai</div>
+			<img class='w-8' src='../static/assets/flags/PAR.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/AUS.png' />
+			<div class='pl-2'>Austrália</div>
+		</div>
+	</div>
+
+	</div>
+
+	<!-- 26-06-2026 -->
+	<div class="flex-1 flex flex-col items-center">
+	<p class='py-2 underline text-lg'>26-06-2026</p>
+	<p class='text-xs text-gray-400'>16:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>Noruega</div>
+			<img class='w-8' src='../static/assets/flags/NOR.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/FRA.png' />
+			<div class='pl-2'>França</div>
+		</div>
+	</div>
+	<p class='text-xs text-gray-400'>16:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>Senegal</div>
+			<img class='w-8' src='../static/assets/flags/SEN.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/SEN.png' />
+			<div class='pl-2'>TBD</div>
+		</div>
+	</div>
+	<p class='text-xs text-gray-400'>21:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>Cabo Verde</div>
+			<img class='w-8' src='../static/assets/flags/CPV.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/KSA.png' />
+			<div class='pl-2'>Arábia Saudita</div>
+		</div>
+	</div>
+	<p class='text-xs text-gray-400'>21:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>Uruguai</div>
+			<img class='w-8' src='../static/assets/flags/URU.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/SPA.png' />
+			<div class='pl-2'>Espanha</div>
+		</div>
+	</div>
+	<p class='text-xs text-gray-400'>00:00* - 27-06</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>Egito</div>
+			<img class='w-8' src='../static/assets/flags/EGY.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/IRN.png' />
+			<div class='pl-2'>RI do Irã</div>
+		</div>
+	</div>
+	<p class='text-xs text-gray-400'>00:00* - 27-06</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>Nova Zelândia</div>
+			<img class='w-8' src='../static/assets/flags/NZL.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/BEL.png' />
+			<div class='pl-2'>Bélgica</div>
+		</div>
+	</div>
+	</div>
+
+	<!-- 27-06-2026 -->
+	<div class="flex-1 flex flex-col items-center">
+	<p class='py-2 underline text-lg'>27-06-2026</p>
+	<p class='text-xs text-gray-400'>18:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>Panamá</div>
+			<img class='w-8' src='../static/assets/flags/PAN.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/ENG.png' />
+			<div class='pl-2'>Inglaterra</div>
+		</div>
+	</div>
+	<p class='text-xs text-gray-400'>18:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>Croácia</div>
+			<img class='w-8' src='../static/assets/flags/CRO.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/GHA.png' />
+			<div class='pl-2'>Gana</div>
+		</div>
+	</div>
+	<p class='text-xs text-gray-400'>20:30</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>Colômbia</div>
+			<img class='w-8' src='../static/assets/flags/COL.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/POR.png' />
+			<div class='pl-2'>Portugal</div>
+		</div>
+	</div>
+	<p class='text-xs text-gray-400'>20:30</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>TBD</div>
+			<img class='w-8' src='../static/assets/flags/UZB.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/UZB.png' />
+			<div class='pl-2'>Uzbequistão</div>
+		</div>
+	</div>
+	<p class='text-xs text-gray-400'>23:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>Argélia</div>
+			<img class='w-8' src='../static/assets/flags/ALG.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/AUT.png' />
+			<div class='pl-2'>Áustria</div>
+		</div>
+	</div>
+	<p class='text-xs text-gray-400'>23:00</p>
+	<div class='grid grid-cols-[1fr_64px_1fr] pb-2'>
+		<div class='flex items-center justify-end'>
+			<div class='pr-2'>Jordânia</div>
+			<img class='w-8' src='../static/assets/flags/JOR.png' />
+		</div>
+		<p class='justify-self-center self-center text-lg'> x </p>
+		<div class='flex items-center justify-start'>
+			<img class='w-8' src='../static/assets/flags/ARG.png' />
+			<div class='pl-2'>Argentina</div>
+		</div>
+	</div>
+	</div>
+
+	
+</div>
+
+
+{% endblock %}

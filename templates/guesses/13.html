@@ -1,0 +1,115 @@
+{% extends 'Base.html' %}
+
+{% block title %}Palpites{% endblock %}
+
+
+{% block content %}
+
+{% include 'components/Nav.html' %}
+
+<div class="flex-1 flex flex-col items-center">
+	<p class='text-2xl md:pb-8 pb-4'>Palpites</p>
+
+	{% include 'components/GuessesNav.html' %}
+
+	<!-- 13-06-2026 -->
+	<form action='13' method='post'>
+	<div class='flex-1 flex flex-col items-center'>
+
+		{% if message %}
+			<p class='text-red-600 py-2'>{{ message }}</p>
+		{% endif %}
+
+		<p class='py-2 underline text-xl'>13-06-2026</p>
+		<p class='text-xs text-gray-400'>16:00</p>
+		<div class='grid grid-cols-[1fr_128px_1fr] pb-2'>
+			<div class='flex items-center justify-end'>
+				<div class='pr-2'>Catar</div>
+				<img class='w-8' src='../static/assets/flags/QAT.png' />
+			</div>
+			<div class='flex justify-center'>
+				<input class='w-12 border rounded-sm border-gray-400 pl-2'
+					id='b02_home' name='b02_home' type='number' min='0' max='20' required {{ match_status.b02 }}
+					value= {{ guesses.b02_home }}>
+				<div class=' px-2 justify-self-center self-center'>x</div>
+				<input class='w-12 border rounded-sm border-gray-400 pl-2'
+					id='b02_away' name='b02_away' type='number' min='0' max='20' required {{ match_status.b02 }}
+					value={{ guesses.b02_away }}>
+			</div>
+			<div class='flex items-center justify-start'>
+				<img class='w-8' src='../static/assets/flags/SWI.png' />
+				<div class='pl-2'>Suíça</div>
+			</div>
+		</div>
+		<p class='text-xs text-gray-400'>19:00</p>
+		<div class='grid grid-cols-[1fr_128px_1fr] pb-2'>
+			<div class='flex items-center justify-end'>
+				<div class='pr-2'>Brasil</div>
+				<img class='w-8' src='../static/assets/flags/BRA.png' />
+			</div>
+			<div class='flex justify-center'>
+				<input class='w-12 border rounded-sm border-gray-400 pl-2'
+					id='c01_home' name='c01_home' type='number' min='0' max='20' required {{ match_status.c01 }}
+					value= {{ guesses.c01_home }}>
+				<div class=' px-2 justify-self-center self-center'>x</div>
+				<input class='w-12 border rounded-sm border-gray-400 pl-2'
+					id='c01_away' name='c01_away' type='number' min='0' max='20' required {{ match_status.c01 }}
+					value={{ guesses.c01_away }}>
+			</div>
+			<div class='flex items-center justify-start'>
+				<img class='w-8' src='../static/assets/flags/MAR.png' />
+				<div class='pl-2'>Marrocos</div>
+			</div>
+		</div>
+		<p class='text-xs text-gray-400'>22:00</p>
+		<div class='grid grid-cols-[1fr_128px_1fr] pb-2'>
+			<div class='flex items-center justify-end'>
+				<div class='pr-2'>Haiti</div>
+				<img class='w-8' src='../static/assets/flags/HAI.png' />
+			</div>
+			<div class='flex justify-center'>
+				<input class='w-12 border rounded-sm border-gray-400 pl-2'
+					id='c02_home' name='c02_home' type='number' min='0' max='20' required {{ match_status.c02 }}
+					value= {{ guesses.c02_home }}>
+				<div class=' px-2 justify-self-center self-center'>x</div>
+				<input class='w-12 border rounded-sm border-gray-400 pl-2'
+					id='c02_away' name='c02_away' type='number' min='0' max='20' required {{ match_status.c02 }}
+					value={{ guesses.c02_away }}>
+			</div>
+			<div class='flex items-center justify-start'>
+				<img class='w-8' src='../static/assets/flags/SCO.png' />
+				<div class='pl-2'>Escócia</div>
+			</div>
+		</div>
+		<p class='text-xs text-gray-400'>01:00* - 14-06</p>
+		<div class='grid grid-cols-[1fr_128px_1fr] pb-2'>
+			<div class='flex items-center justify-end'>
+				<div class='pr-2'>Austrália</div>
+				<img class='w-8' src='../static/assets/flags/AUS.png' />
+			</div>
+			<div class='flex justify-center'>
+				<input class='w-12 border rounded-sm border-gray-400 pl-2'
+					id='d02_home' name='d02_home' type='number' min='0' max='20' required {{ match_status.d02 }}
+					value= {{ guesses.d02_home }}>
+				<div class=' px-2 justify-self-center self-center'>x</div>
+				<input class='w-12 border rounded-sm border-gray-400 pl-2'
+					id='d02_away' name='d02_away' type='number' min='0' max='20' required {{ match_status.d02 }}
+					value={{ guesses.d02_away }}>
+			</div>
+			<div class='flex items-center justify-start'>
+				<img class='w-8' src='../static/assets/flags/AUS.png' />
+				<div class='pl-2'>TBD</div>
+			</div>
+		</div>
+
+		<div class='pt-2'>
+			<button type='submit' class='text-white bg-blue-800 rounded-md px-2 cursor-pointer'>Palpitar</button>
+		</div>
+		{% if error_message %}
+			<p class='text-red-600 py-2'>{{ error_message }}</p>
+		{% endif %}
+	</div>
+	</form>
+
+</div>
+{% endblock %}

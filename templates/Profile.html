@@ -1,0 +1,74 @@
+{% extends 'Base.html' %}
+
+{% block title %}Perfil{% endblock %}
+
+
+{% block content %}
+
+{% include 'components/Nav.html' %}
+
+<div class="flex-1 flex flex-col items-center md:pl-4">
+	<p class='text-2xl md:pb-8 pb-4'>Perfil</p>
+
+  <form method='post' action='/profile'>
+    <div class='flex flex-col items-start'>
+
+      <div class='flex items-center pb-2'>
+        <p class='pr-2 w-16'>Email: </p>
+        <input type='text' id='email' name='email' disabled
+          class='border rounded-md px-2 py-1 border-gray-400 bg-gray-200 placeholder:text-body' placeholder= '{{ email }}'>
+      </div>
+      <p class='text-xs'>Somente letras ou números, sem caracteres especiais.</p>
+      <div class='flex items-center'>
+        <label class='pr-2 w-16' for='username'>Usuário: </label>
+        <input type='text' id='username' name='username' value='{{ profile_data.username }}' required
+        pattern='[a-zA-Z0-9]+'
+        class='border rounded-md text-heading focus:ring-brand focus:border-brand px-2 py-1 shadow-sm placeholder:text-body mr-4'>
+			</div>
+
+<!--       <label for='invisible'>
+        {% if profile_data.invisible %}
+          <input type='checkbox' id='invisible' name='invisible' value='True' checked>        
+        {% else %}
+          <input type='checkbox' id='invisible' name='invisible' value='True'>
+        {% endif %}
+        <span>NÃO quero que meu nome de usuário apareça na lista de rankings global.</span>
+      </label>
+      <span class='text-xs'>Não selecione se deseja ver seu nome na lista de rankings global.
+      <br>Selecione se deseja ver seu nome somente na lista de rankings que você participa.</span> -->
+      
+      <div class='pt-2'>
+        <button type='submit' class='text-white bg-blue-800 rounded-md px-2 cursor-pointer'>Atualizar</button>
+        {% if message %}
+          <span class='text-red-600 pl-2'>{{ message }}</span>
+        {% endif %}
+      </div>
+      
+    </div>
+  </form>
+  <br>
+  
+  <form method='post' action='/delete'>
+    <div class='flex flex-col items-start'>
+      <p>Caso deseje deletar seu perfil, <br>escreva seu email abaixo e clique em Deletar:</p>
+      <p class='text-xs'>Essa operação é irreversível.</p>
+      <div class='flex items-center'>
+        <p class='pr-2 w-16'>Email: </p>
+        <input type='email' id='deleteemail' name='deleteemail' required
+        class='border rounded-md text-heading focus:ring-brand focus:border-brand px-2 py-1 shadow-sm placeholder:text-body mr-4'>
+      </div>
+
+      <div class='pt-2'>
+      <button type='submit' class='text-white bg-red-600 rounded-md px-2 cursor-pointer'>Deletar</button>
+      {% if delete_message %}
+        <span class='text-red-600 pl-2'>{{ delete_message }}</span>
+      {% endif %}
+      </div>
+
+    </div>
+  </form>
+</div>
+
+{% endblock %}
+
+

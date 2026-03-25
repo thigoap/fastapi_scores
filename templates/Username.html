@@ -1,0 +1,37 @@
+{% extends 'Base.html' %}
+
+{% block title %}Username{% endblock %}
+
+
+{% block content %}
+
+<div class='flex flex-col items-start'>
+	<p class='text-2xl pb-8'>Bem vindo(a) ao CoPalpites!</p>
+	<p>Como esse é o seu primeiro acesso, por favor, crie um nome de usuário.
+	<br>Ele poderá ser alterado quando quiser.</p>
+	<br>
+	<p>O seu acesso sempre será feito com a sua conta do Google.
+	<br>Seu nome de usuário é somente uma medida de proteção para que
+	seu email não fique visível para os demais usuários na 
+	tabela de rankings.</p>
+	<br>
+	
+	<form method ='post' action='/username'>
+	<label for='username'>Nome de usuário:</label>
+	<div class='flex pb-2'>
+		<input type='text' id='username' name='username'
+		class='border rounded-md text-heading focus:ring-brand focus:border-brand block px-2 py-1 shadow-sm placeholder:text-body mr-4' placeholder='Usuário' required>
+		<button type='submit' class='text-white bg-blue-800 rounded-md px-2 cursor-pointer'>Criar</button>
+		{% if message %}
+			<span class='text-red-600 pl-2 flex items-center'>{{ message }}</span>
+		{% endif %}
+	</div>
+	<label for='invisible'>
+      <input type='checkbox' id='invisible' name='invisible' value='True'>
+      <span>Selecione esse checkbox caso <b><u>NÃO</u></b> queira que seu nome de usuário apareça na lista de rankings.</span>
+		<p>Essa opção também pode ser alterada futuramente no seu pefil.</p>
+    </label><br>
+	</form>
+</div>
+
+{% endblock %}

@@ -1,0 +1,75 @@
+{% extends 'Base.html' %}
+
+{% block title %}Palpites{% endblock %}
+
+
+{% block content %}
+
+{% include 'components/Nav.html' %}
+
+<div class="flex-1 flex flex-col items-center">
+	<p class='text-2xl md:pb-8 pb-4'>Palpites</p>
+
+	{% include 'components/GuessesNav.html' %}
+
+	<!-- 11-06-2026 -->
+	<form action='11' method='post'>
+	<div class='flex-1 flex flex-col items-center'>
+
+		{% if message %}
+			<p class='text-red-600 py-2'>{{ message }}</p>
+		{% endif %}
+
+		<p class='py-2 underline text-xl'>11-06-2026</p>
+		<p class='text-xs text-gray-400'>16:00</p>
+		<div class='grid grid-cols-[1fr_128px_1fr] pb-2'>
+			<div class='flex items-center justify-end'>
+				<div class='pr-2'>México</div>
+				<img class='w-8' src='../static/assets/flags/MEX.png' />
+			</div>
+				<div class='flex justify-center'>
+				<input class='w-12 border rounded-sm border-gray-400 pl-2'
+					id='a01_home' name='a01_home' type='number' min='0' max='20' required {{ match_status.a01 }}
+					value= {{ guesses.a01_home }}>
+				<div class=' px-2 justify-self-center self-center'>x</div>
+				<input class='w-12 border rounded-sm border-gray-400 pl-2'
+					id='a01_away' name='a01_away' type='number' min='0' max='20' required {{ match_status.a01 }}
+					value={{ guesses.a01_away }}> 
+			</div>
+			<div class='flex items-center justify-start'>
+				<img class='w-8' src='../static/assets/flags/RSA.png' />
+				<div class='pl-2'>África do Sul</div>
+			</div>
+		</div>
+		<p class='text-xs text-gray-400'>23:00</p>
+		<div class='grid grid-cols-[1fr_128px_1fr] pb-2'>
+			<div class='flex items-center justify-end'>
+				<div class='pr-2'>República da Coreia</div>
+				<img class='w-8' src='../static/assets/flags/KOR.png' />
+			</div>
+			<div class='flex justify-center'>
+				<input class='w-12 border rounded-sm border-gray-400 pl-2'
+					id='a02_home' name='a02_home' type='number' min='0' max='20' required {{ match_status.a02 }}
+					value= {{ guesses.a02_home }}>
+				<div class=' px-2 justify-self-center self-center'>x</div>
+				<input class='w-12 border rounded-sm border-gray-400 pl-2'
+					id='a02_away' name='a02_away' type='number' min='0' max='20' required {{ match_status.a02 }}
+					value={{ guesses.a02_away }}>
+			</div>
+			<div class='flex items-center justify-start'>
+				<img class='w-8' src='../static/assets/flags/KOR.png' />
+				<div class='pl-2'>TBD</div>
+			</div>
+		</div>
+	
+		<div class='pt-2'>
+			<button type='submit' class='text-white bg-blue-800 rounded-md px-2 cursor-pointer'>Palpitar</button>
+		</div>
+		{% if error_message %}
+			<p class='text-red-600 py-2'>{{ error_message }}</p>
+		{% endif %}
+</div>
+	</form>
+
+</div>
+{% endblock %}
