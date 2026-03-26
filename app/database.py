@@ -125,9 +125,34 @@ def get_rank():
 
 
 def get_visible_rank():
-    visible_rank = supabase.table('users').select('*').eq('invisible', False).execute().data
-    return visible_rank
+    visible_rank = supabase.table('users').select('username, points, guesses').order('points', desc=True).eq('invisible', False).execute().data
+    #print(visible_rank)
 
+    # Ranked Leaderboard
+    """     ranked_leaderboard = [
+       {**user, 'position': i} 
+        for i, user in enumerate(visible_rank, 1)
+    ]
+    print('Ranked leaderboard -------------------------------')
+    print(ranked_leaderboard) """
+ 
+    # Ranked Leaderboard considering draws
+    ranked_leaderboard = []
+    current_rank = 0
+    last_points = None
+
+    for i, user in enumerate(visible_rank, 1):
+        # Only increase the rank if the points are different from the previous user
+        if user['points'] != last_points:
+            current_rank = i
+        
+        ranked_leaderboard.append({**user, 'position': current_rank})
+        last_points = user['points']
+
+    print('Ranked Leaderboard considering draws -------------------------------')
+    print(ranked_leaderboard)
+
+    return ranked_leaderboard
 
 """ def get_matches_info():
     matches_info = []
