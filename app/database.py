@@ -108,7 +108,7 @@ def record_guesses(email, guesses):
 
 
 def get_guesses(email):
-    guesses = supabase.table('guesses').select('match_id, guess_home, guess_away').eq('user_email', email).execute().data
+    guesses = supabase.table('guesses').select('match_id, guess_home, guess_away, points_earned').eq('user_email', email).execute().data
 
     guesses_dict = {}
 
@@ -116,7 +116,26 @@ def get_guesses(email):
         m_id = entry['match_id']
         guesses_dict [f"{m_id}_home"] = entry['guess_home']
         guesses_dict [f"{m_id}_away"] = entry['guess_away']
+        guesses_dict [f"{m_id}_points"] = entry['points_earned']
+    #print(guesses_dict)
     return guesses_dict
+
+
+def get_fixtures_results():
+    results = supabase.table('fixtures').select('match_id, home_team_score, away_team_score').execute().data
+
+    results_dict = {}
+
+    for entry in results:
+        m_id = entry['match_id']
+        results_dict [f"{m_id}_home"] = entry['home_team_score']
+        results_dict [f"{m_id}_away"] = entry['away_team_score']
+    #print(results_dict)
+
+    filtered_results_dict = {k: v for k, v in results_dict.items() if v is not None}
+    print(filtered_results_dict)
+
+    return filtered_results_dict
 
 
 def get_rank():

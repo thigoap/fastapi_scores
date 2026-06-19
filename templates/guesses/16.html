@@ -12,7 +12,7 @@
 
 	{% include 'components/GuessesNav.html' %}
 
-	<!-- 15-06-2026 -->
+	<!-- 16-06-2026 -->
 	<form action='16' method='post'>
 	<div class='flex-1 flex flex-col items-center'>
 
@@ -41,6 +41,14 @@
 				<div class='pl-2'>Senegal</div>
 			</div>
 		</div>
+		{% if results.i01_home is not none %}
+		<div class='flex justify-center pb-4'>
+			<div class=''>
+				Placar Final: {{ results.i01_home }} x {{ results.i01_away }} - <span class='font-bold'>+{{ guesses.i01_points }} pontos</span>
+			</div>
+		</div>
+		{% endif %}
+
 		<p class='text-xs text-gray-400'>19:00</p>
 		<div class='grid grid-cols-[1fr_128px_1fr] pb-2'>
 			<div class='flex items-center justify-end'>
@@ -61,6 +69,14 @@
 				<div class='pl-2'>Noruega</div>
 			</div>
 		</div>
+		{% if results.i02_home is not none %}
+		<div class='flex justify-center pb-4'>
+			<div class=''>
+				Placar Final: {{ results.i02_home }} x {{ results.i02_away }} - <span class='font-bold'>+{{ guesses.i02_points }} pontos</span>
+			</div>
+		</div>
+		{% endif %}
+
 		<p class='text-xs text-gray-400'>22:00</p>
 		<div class='grid grid-cols-[1fr_128px_1fr] pb-2'>
 			<div class='flex items-center justify-end'>
@@ -81,6 +97,14 @@
 				<div class='pl-2'>Argélia</div>
 			</div>
 		</div>
+		{% if results.j01_home is not none %}
+		<div class='flex justify-center pb-4'>
+			<div class=''>
+				Placar Final: {{ results.j01_home }} x {{ results.j01_away }} - <span class='font-bold'>+{{ guesses.j01_points }} pontos</span>
+			</div>
+		</div>
+		{% endif %}
+
 		<p class='text-xs text-gray-400'>01:00* - 17-06</p>
 		<div class='grid grid-cols-[1fr_128px_1fr] pb-2'>
 			<div class='flex items-center justify-end'>
@@ -101,6 +125,13 @@
 				<div class='pl-2'>Jordânia</div>
 			</div>
 		</div>
+		{% if results.j02_home is not none %}
+		<div class='flex justify-center pb-4'>
+			<div class=''>
+				Placar Final: {{ results.j02_home }} x {{ results.j02_away }} - <span class='font-bold'>+{{ guesses.j02_points }} pontos</span>
+			</div>
+		</div>
+		{% endif %}
 
 		<div class='pt-2'>
 			<button type='submit' class='text-white bg-blue-800 rounded-md px-2 cursor-pointer'>Palpitar</button>

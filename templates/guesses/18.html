@@ -12,39 +12,39 @@
 
 	{% include 'components/GuessesNav.html' %}
 
-	<!-- 15-06-2026 -->
-	<form action='15' method='post'>
+	<!-- 18-06-2026 -->
+	<form action='18' method='post'>
 	<div class='flex-1 flex flex-col items-center'>
 
 		{% if message %}
 			<p class='text-red-600 py-2'>{{ message }}</p>
 		{% endif %}
 
-		<p class='py-2 underline text-xl'>15-06-2026</p>
+		<p class='py-2 underline text-xl'>18-06-2026</p>
 		<p class='text-xs text-gray-400'>13:00</p>
 		<div class='grid grid-cols-[1fr_128px_1fr] pb-2'>
 			<div class='flex items-center justify-end'>
-				<div class='pr-2'>Espanha</div>
-				<img class='w-8' src='../static/assets/flags/SPA.png' />
+				<div class='pr-2'>Chéquia</div>
+				<img class='w-8' src='../static/assets/flags/CZE.png' />
 			</div>
 			<div class='flex justify-center'>
 				<input class='w-12 border rounded-sm border-gray-400 pl-2'
-					id='h01_home' name='h01_home' type='number' min='0' max='20' required {{ match_status.h01 }}
-					value= {{ guesses.h01_home }}>
+					id='a03_home' name='a03_home' type='number' min='0' max='20' required {{ match_status.a03 }}
+					value= {{ guesses.a03_home }}>
 				<div class=' px-2 justify-self-center self-center'>x</div>
 				<input class='w-12 border rounded-sm border-gray-400 pl-2'
-					id='h01_away' name='h01_away' type='number' min='0' max='20' required {{ match_status.h01 }}
-					value={{ guesses.h01_away }}>
+					id='a03_away' name='a03_away' type='number' min='0' max='20' required {{ match_status.a03 }}
+					value={{ guesses.a03_away }}>
 			</div>
 			<div class='flex items-center justify-start'>
-				<img class='w-8' src='../static/assets/flags/CPV.png' />
-				<div class='pl-2'>Cabo Verde</div>
+				<img class='w-8' src='../static/assets/flags/RSA.png' />
+				<div class='pl-2'>África do Sul</div>
 			</div>
 		</div>
-		{% if results.h01_home is not none %}
+		{% if results.a03_home is not none %}
 		<div class='flex justify-center pb-4'>
 			<div class=''>
-				Placar Final: {{ results.h01_home }} x {{ results.h01_away }} - <span class='font-bold'>+{{ guesses.h01_points }} pontos</span>
+				Placar Final: {{ results.a03_home }} x {{ results.a03_away }} - <span class='font-bold'>+{{ guesses.a03_points }} pontos</span>
 			</div>
 		</div>
 		{% endif %}
@@ -52,27 +52,27 @@
 		<p class='text-xs text-gray-400'>16:00</p>
 		<div class='grid grid-cols-[1fr_128px_1fr] pb-2'>
 			<div class='flex items-center justify-end'>
-				<div class='pr-2'>Bélgica</div>
-				<img class='w-8' src='../static/assets/flags/BEL.png' />
+				<div class='pr-2'>Suíça</div>
+				<img class='w-8' src='../static/assets/flags/SWI.png' />
 			</div>
 			<div class='flex justify-center'>
 				<input class='w-12 border rounded-sm border-gray-400 pl-2'
-					id='g01_home' name='g01_home' type='number' min='0' max='20' required {{ match_status.g01 }}
-					value= {{ guesses.g01_home }}>
+					id='b03_home' name='b03_home' type='number' min='0' max='20' required {{ match_status.b03 }}
+					value= {{ guesses.b03_home }}>
 				<div class=' px-2 justify-self-center self-center'>x</div>
 				<input class='w-12 border rounded-sm border-gray-400 pl-2'
-					id='g01_away' name='g01_away' type='number' min='0' max='20' required {{ match_status.g01 }}
-					value={{ guesses.g01_away }}>
+					id='b03_away' name='b03_away' type='number' min='0' max='20' required {{ match_status.b03 }}
+					value={{ guesses.b03_away }}>
 			</div>
 			<div class='flex items-center justify-start'>
-				<img class='w-8' src='../static/assets/flags/EGY.png' />
-				<div class='pl-2'>Egito</div>
+				<img class='w-8' src='../static/assets/flags/BIH.png' />
+				<div class='pl-2'>Bósnia e Herzegovina</div>
 			</div>
 		</div>
-		{% if results.g01_home is not none %}
+		{% if results.b03_home is not none %}
 		<div class='flex justify-center pb-4'>
 			<div class=''>
-				Placar Final: {{ results.g01_home }} x {{ results.g01_away }} - <span class='font-bold'>+{{ guesses.g01_points }} pontos</span>
+				Placar Final: {{ results.b03_home }} x {{ results.b03_away }} - <span class='font-bold'>+{{ guesses.b03_points }} pontos</span>
 			</div>
 		</div>
 		{% endif %}
@@ -80,27 +80,27 @@
 		<p class='text-xs text-gray-400'>19:00</p>
 		<div class='grid grid-cols-[1fr_128px_1fr] pb-2'>
 			<div class='flex items-center justify-end'>
-				<div class='pr-2'>Arábia Saudita</div>
-				<img class='w-8' src='../static/assets/flags/KSA.png' />
+				<div class='pr-2'>Canadá</div>
+				<img class='w-8' src='../static/assets/flags/CAN.png' />
 			</div>
 			<div class='flex justify-center'>
 				<input class='w-12 border rounded-sm border-gray-400 pl-2'
-					id='h02_home' name='h02_home' type='number' min='0' max='20' required {{ match_status.h02 }}
-					value= {{ guesses.h02_home }}>
+					id='b04_home' name='b04_home' type='number' min='0' max='20' required {{ match_status.b04 }}
+					value= {{ guesses.b04_home }}>
 				<div class=' px-2 justify-self-center self-center'>x</div>
 				<input class='w-12 border rounded-sm border-gray-400 pl-2'
-					id='h02_away' name='h02_away' type='number' min='0' max='20' required {{ match_status.h02 }}
-					value={{ guesses.h02_away }}>
+					id='b04_away' name='b04_away' type='number' min='0' max='20' required {{ match_status.b04 }}
+					value={{ guesses.b04_away }}>
 			</div>
 			<div class='flex items-center justify-start'>
-				<img class='w-8' src='../static/assets/flags/URU.png' />
-				<div class='pl-2'>Uruguai</div>
+				<img class='w-8' src='../static/assets/flags/QAT.png' />
+				<div class='pl-2'>Catar</div>
 			</div>
 		</div>
-		{% if results.h02_home is not none %}
+		{% if results.b04_home is not none %}
 		<div class='flex justify-center pb-4'>
 			<div class=''>
-				Placar Final: {{ results.h02_home }} x {{ results.h02_away }} - <span class='font-bold'>+{{ guesses.h02_points }} pontos</span>
+				Placar Final: {{ results.b04_home }} x {{ results.b04_away }} - <span class='font-bold'>+{{ guesses.b04_points }} pontos</span>
 			</div>
 		</div>
 		{% endif %}
@@ -108,27 +108,27 @@
 		<p class='text-xs text-gray-400'>22:00</p>
 		<div class='grid grid-cols-[1fr_128px_1fr] pb-2'>
 			<div class='flex items-center justify-end'>
-				<div class='pr-2'>RI do Irã</div>
-				<img class='w-8' src='../static/assets/flags/IRN.png' />
+				<div class='pr-2'>México</div>
+				<img class='w-8' src='../static/assets/flags/MEX.png' />
 			</div>
 			<div class='flex justify-center'>
 				<input class='w-12 border rounded-sm border-gray-400 pl-2'
-					id='g02_home' name='g02_home' type='number' min='0' max='20' required {{ match_status.g02 }}
-					value= {{ guesses.g02_home }}>
+					id='a04_home' name='a04_home' type='number' min='0' max='20' required {{ match_status.a04 }}
+					value= {{ guesses.a04_home }}>
 				<div class=' px-2 justify-self-center self-center'>x</div>
 				<input class='w-12 border rounded-sm border-gray-400 pl-2'
-					id='g02_away' name='g02_away' type='number' min='0' max='20' required {{ match_status.g02 }}
-					value={{ guesses.g02_away }}>
+					id='a04_away' name='a04_away' type='number' min='0' max='20' required {{ match_status.a04 }}
+					value={{ guesses.a04_away }}>
 			</div>
 			<div class='flex items-center justify-start'>
-				<img class='w-8' src='../static/assets/flags/NZL.png' />
-				<div class='pl-2'>Nova Zelândia</div>
+				<img class='w-8' src='../static/assets/flags/KOR.png' />
+				<div class='pl-2'>República da Coreia</div>
 			</div>
 		</div>
-		{% if results.g02_home is not none %}
+		{% if results.a04_home is not none %}
 		<div class='flex justify-center pb-4'>
 			<div class=''>
-				Placar Final: {{ results.g02_home }} x {{ results.g02_away }} - <span class='font-bold'>+{{ guesses.g02_points }} pontos</span>
+				Placar Final: {{ results.a04_home }} x {{ results.a04_away }} - <span class='font-bold'>+{{ guesses.a04_points }} pontos</span>
 			</div>
 		</div>
 		{% endif %}

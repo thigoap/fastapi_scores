@@ -41,6 +41,14 @@
 				<div class='pl-2'>África do Sul</div>
 			</div>
 		</div>
+		{% if results.a01_home is not none %}
+		<div class='flex justify-center pb-4'>
+			<div class=''>
+				Placar Final: {{ results.a01_home }} x {{ results.a01_away }} - <span class='font-bold'>+{{ guesses.a01_points }} pontos</span>
+			</div>
+		</div>
+		{% endif %}
+		
 		<p class='text-xs text-gray-400'>23:00</p>
 		<div class='grid grid-cols-[1fr_128px_1fr] pb-2'>
 			<div class='flex items-center justify-end'>
@@ -61,7 +69,13 @@
 				<div class='pl-2'>Tchéquia</div>
 			</div>
 		</div>
-	
+		{% if results.a02_home is not none %}
+		<div class='flex justify-center pb-4'>
+			<div class=''>
+				Placar Final: {{ results.a02_home }} x {{ results.a02_away }} - <span class='font-bold'>+{{ guesses.a02_points }} pontos</span>
+			</div>
+		</div>
+		{% endif %}
 		<div class='pt-2'>
 			<button type='submit' class='text-white bg-blue-800 rounded-md px-2 cursor-pointer'>Palpitar</button>
 		</div>

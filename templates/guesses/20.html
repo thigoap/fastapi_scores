@@ -12,44 +12,16 @@
 
 	{% include 'components/GuessesNav.html' %}
 
-	<!-- 14-06-2026 -->
-	<form action='14' method='post'>
+	<!-- 20-06-2026 -->
+	<form action='20' method='post'>
 	<div class='flex-1 flex flex-col items-center'>
 
 		{% if message %}
 			<p class='text-red-600 py-2'>{{ message }}</p>
 		{% endif %}
 
-		<p class='py-2 underline text-xl'>14-06-2026</p>
+		<p class='py-2 underline text-xl'>20-06-2026</p>
 		<p class='text-xs text-gray-400'>14:00</p>
-		<div class='grid grid-cols-[1fr_128px_1fr] pb-2'>
-			<div class='flex items-center justify-end'>
-				<div class='pr-2'>Alemanha</div>
-				<img class='w-8' src='../static/assets/flags/GER.png' />
-			</div>
-			<div class='flex justify-center'>
-				<input class='w-12 border rounded-sm border-gray-400 pl-2'
-					id='e01_home' name='e01_home' type='number' min='0' max='20' required {{ match_status.e01 }}
-					value= {{ guesses.e01_home }}>
-				<div class=' px-2 justify-self-center self-center'>x</div>
-				<input class='w-12 border rounded-sm border-gray-400 pl-2'
-					id='e01_away' name='e01_away' type='number' min='0' max='20' required {{ match_status.e01 }}
-					value={{ guesses.e01_away }}>
-			</div>
-			<div class='flex items-center justify-start'>
-				<img class='w-8' src='../static/assets/flags/CUW.png' />
-				<div class='pl-2'>Curaçau</div>
-			</div>
-		</div>
-		{% if results.e01_home is not none %}
-		<div class='flex justify-center pb-4'>
-			<div class=''>
-				Placar Final: {{ results.e01_home }} x {{ results.e01_away }} - <span class='font-bold'>+{{ guesses.e01_points }} pontos</span>
-			</div>
-		</div>
-		{% endif %}
-
-		<p class='text-xs text-gray-400'>17:00</p>
 		<div class='grid grid-cols-[1fr_128px_1fr] pb-2'>
 			<div class='flex items-center justify-end'>
 				<div class='pr-2'>Holanda</div>
@@ -57,78 +29,106 @@
 			</div>
 			<div class='flex justify-center'>
 				<input class='w-12 border rounded-sm border-gray-400 pl-2'
-					id='f01_home' name='f01_home' type='number' min='0' max='20' required {{ match_status.f01 }}
-					value= {{ guesses.f01_home }}>
+					id='f03_home' name='f03_home' type='number' min='0' max='20' required {{ match_status.f03 }}
+					value= {{ guesses.f03_home }}>
 				<div class=' px-2 justify-self-center self-center'>x</div>
 				<input class='w-12 border rounded-sm border-gray-400 pl-2'
-					id='f01_away' name='f01_away' type='number' min='0' max='20' required {{ match_status.f01 }}
-					value={{ guesses.f01_away }}>
+					id='f03_away' name='f03_away' type='number' min='0' max='20' required {{ match_status.f03 }}
+					value={{ guesses.f03_away }}>
+			</div>
+			<div class='flex items-center justify-start'>
+				<img class='w-8' src='../static/assets/flags/SWE.png' />
+				<div class='pl-2'>Suécia</div>
+			</div>
+		</div>
+		{% if results.f03_home is not none %}
+		<div class='flex justify-center pb-4'>
+			<div class=''>
+				Placar Final: {{ results.f03_home }} x {{ results.f03_away }} - <span class='font-bold'>+{{ guesses.f03_points }} pontos</span>
+			</div>
+		</div>
+		{% endif %}
+
+		<p class='text-xs text-gray-400'>17:00</p>
+		<div class='grid grid-cols-[1fr_128px_1fr] pb-2'>
+			<div class='flex items-center justify-end'>
+				<div class='pr-2'>Alemanha</div>
+				<img class='w-8' src='../static/assets/flags/GER.png' />
+			</div>
+			<div class='flex justify-center'>
+				<input class='w-12 border rounded-sm border-gray-400 pl-2'
+					id='e03_home' name='e03_home' type='number' min='0' max='20' required {{ match_status.e03 }}
+					value= {{ guesses.e03_home }}>
+				<div class=' px-2 justify-self-center self-center'>x</div>
+				<input class='w-12 border rounded-sm border-gray-400 pl-2'
+					id='e03_away' name='e03_away' type='number' min='0' max='20' required {{ match_status.e03 }}
+					value={{ guesses.e03_away }}>
+			</div>
+			<div class='flex items-center justify-start'>
+				<img class='w-8' src='../static/assets/flags/CIV.png' />
+				<div class='pl-2'>Costa do Marfim</div>
+			</div>
+		</div>
+		{% if results.e03_home is not none %}
+		<div class='flex justify-center pb-4'>
+			<div class=''>
+				Placar Final: {{ results.e03_home }} x {{ results.e03_away }} - <span class='font-bold'>+{{ guesses.e03_points }} pontos</span>
+			</div>
+		</div>
+		{% endif %}
+
+		<p class='text-xs text-gray-400'>21:00</p>
+		<div class='grid grid-cols-[1fr_128px_1fr] pb-2'>
+			<div class='flex items-center justify-end'>
+				<div class='pr-2'>Equador</div>
+				<img class='w-8' src='../static/assets/flags/ECU.png' />
+			</div>
+			<div class='flex justify-center'>
+				<input class='w-12 border rounded-sm border-gray-400 pl-2'
+					id='e04_home' name='e04_home' type='number' min='0' max='20' required {{ match_status.e04 }}
+					value= {{ guesses.e04_home }}>
+				<div class=' px-2 justify-self-center self-center'>x</div>
+				<input class='w-12 border rounded-sm border-gray-400 pl-2'
+					id='e04_away' name='e04_away' type='number' min='0' max='20' required {{ match_status.e04 }}
+					value={{ guesses.e04_away }}>
+			</div>
+			<div class='flex items-center justify-start'>
+				<img class='w-8' src='../static/assets/flags/CUW.png' />
+				<div class='pl-2'>Curaçau</div>
+			</div>
+		</div>
+		{% if results.e04_home is not none %}
+		<div class='flex justify-center pb-4'>
+			<div class=''>
+				Placar Final: {{ results.e04_home }} x {{ results.e04_away }} - <span class='font-bold'>+{{ guesses.e04_points }} pontos</span>
+			</div>
+		</div>
+		{% endif %}
+
+		<p class='text-xs text-gray-400'>01:00* - 21-06</p>
+		<div class='grid grid-cols-[1fr_128px_1fr] pb-2'>
+			<div class='flex items-center justify-end'>
+				<div class='pr-2'>Tunísia</div>
+				<img class='w-8' src='../static/assets/flags/TUN.png' />
+			</div>
+			<div class='flex justify-center'>
+				<input class='w-12 border rounded-sm border-gray-400 pl-2'
+					id='f04_home' name='f04_home' type='number' min='0' max='20' required {{ match_status.f04 }}
+					value= {{ guesses.f04_home }}>
+				<div class=' px-2 justify-self-center self-center'>x</div>
+				<input class='w-12 border rounded-sm border-gray-400 pl-2'
+					id='f04_away' name='f04_away' type='number' min='0' max='20' required {{ match_status.f04 }}
+					value={{ guesses.f04_away }}>
 			</div>
 			<div class='flex items-center justify-start'>
 				<img class='w-8' src='../static/assets/flags/JAP.png' />
 				<div class='pl-2'>Japão</div>
 			</div>
 		</div>
-		{% if results.f01_home is not none %}
+		{% if results.f04_home is not none %}
 		<div class='flex justify-center pb-4'>
 			<div class=''>
-				Placar Final: {{ results.f01_home }} x {{ results.f01_away }} - <span class='font-bold'>+{{ guesses.f01_points }} pontos</span>
-			</div>
-		</div>
-		{% endif %}
-
-		<p class='text-xs text-gray-400'>20:00</p>
-		<div class='grid grid-cols-[1fr_128px_1fr] pb-2'>
-			<div class='flex items-center justify-end'>
-				<div class='pr-2'>Costa do Marfim</div>
-				<img class='w-8' src='../static/assets/flags/CIV.png' />
-			</div>
-			<div class='flex justify-center'>
-				<input class='w-12 border rounded-sm border-gray-400 pl-2'
-					id='e02_home' name='e02_home' type='number' min='0' max='20' required {{ match_status.e02 }}
-					value= {{ guesses.e02_home }}>
-				<div class=' px-2 justify-self-center self-center'>x</div>
-				<input class='w-12 border rounded-sm border-gray-400 pl-2'
-					id='e02_away' name='e02_away' type='number' min='0' max='20' required {{ match_status.e02 }}
-					value={{ guesses.e02_away }}>
-			</div>
-			<div class='flex items-center justify-start'>
-				<img class='w-8' src='../static/assets/flags/ECU.png' />
-				<div class='pl-2'>Equador</div>
-			</div>
-		</div>
-		{% if results.e02_home is not none %}
-		<div class='flex justify-center pb-4'>
-			<div class=''>
-				Placar Final: {{ results.e02_home }} x {{ results.e02_away }} - <span class='font-bold'>+{{ guesses.e02_points }} pontos</span>
-			</div>
-		</div>
-		{% endif %}
-
-		<p class='text-xs text-gray-400'>23:00</p>
-		<div class='grid grid-cols-[1fr_128px_1fr] pb-2'>
-			<div class='flex items-center justify-end'>
-				<div class='pr-2'>Suécia</div>
-				<img class='w-8' src='../static/assets/flags/SWE.png' />
-			</div>
-			<div class='flex justify-center'>
-				<input class='w-12 border rounded-sm border-gray-400 pl-2'
-					id='f02_home' name='f02_home' type='number' min='0' max='20' required {{ match_status.f02 }}
-					value= {{ guesses.f02_home }}>
-				<div class=' px-2 justify-self-center self-center'>x</div>
-				<input class='w-12 border rounded-sm border-gray-400 pl-2'
-					id='f02_away' name='f02_away' type='number' min='0' max='20' required {{ match_status.f02 }}
-					value={{ guesses.f02_away }}>
-			</div>
-			<div class='flex items-center justify-start'>
-				<img class='w-8' src='../static/assets/flags/TUN.png' />
-				<div class='pl-2'>Tunísia</div>
-			</div>
-		</div>
-		{% if results.f02_home is not none %}
-		<div class='flex justify-center pb-4'>
-			<div class=''>
-				Placar Final: {{ results.f02_home }} x {{ results.f02_away }} - <span class='font-bold'>+{{ guesses.f02_points }} pontos</span>
+				Placar Final: {{ results.f04_home }} x {{ results.f04_away }} - <span class='font-bold'>+{{ guesses.f04_points }} pontos</span>
 			</div>
 		</div>
 		{% endif %}
