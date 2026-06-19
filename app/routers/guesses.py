@@ -75,9 +75,10 @@ async def update(request: Request, page_id: str):
     # get updated data from the database for the new page
     db_guesses = get_guesses(user_email)
     match_status = get_match_status()
+    results = get_fixtures_results()
 
     return templates.TemplateResponse(
         request=request,
         name='/guesses/' + page_id + '.html',
-        context={'guesses': db_guesses, 'message': message, 'error_message': error_message, 'match_status': match_status}
+        context={'guesses': db_guesses, 'message': message, 'error_message': error_message, 'match_status': match_status, 'results': results}
     )
